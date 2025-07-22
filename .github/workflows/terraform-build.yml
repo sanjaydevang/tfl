@@ -7,6 +7,12 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# ✅ Security Fix: Restrict GitHub Actions permissions (minimal required)
+permissions:
+  contents: read
+  id-token: write  # For OIDC if using AWS authentication
+  pull-requests: read
+
 jobs:
   terraform-build:
     name: Terraform CI
