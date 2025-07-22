@@ -33,7 +33,7 @@ jobs:
 
       # ✅ NEW: Terraform Linting (tflint)
       - name: Lint Terraform Code
-        uses: terraform-linters/tflint-action@v1
+        uses: terraform-linters/tflint-action@v0.38.1
 
       # ✅ NEW: Terraform Security Scan (checkov)
       - name: Check Terraform Security
