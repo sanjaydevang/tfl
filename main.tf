@@ -15,16 +15,38 @@ terraform {
 # 2. Define a Resource (our EC2 instance)
 # This block tells Terraform to create an AWS EC2 instance.
 resource "aws_instance" "web_server" {
-  count = 10
+  count = 1
   # ami is the Amazon Machine Image ID - this one is for Amazon Linux 2
   ami           = "ami-051f8a213df8bc089" 
   
   # instance_type defines the size and power of the server
   instance_type = "t2.micro"
 
+  # ✅ Security Fix: Enable EBS optimization
+  ebs_optimized = true
+  
+  # ✅ Security Fix: Enable detailed monitoring
+  monitoring = true
+  
+  # ✅ Security Fix: Configure secure Instance Metadata Service (IMDSv2 only)
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_tokens                 = "required"    # Require IMDSv2
+    http_put_response_hop_limit = 1
+    instance_metadata_tags      = "enabled"
+  }
+  
+  # ✅ Security Fix: Encrypt root EBS volume
+  root_block_device {
+    volume_type = "gp3"
+    volume_size = 8
+    encrypted   = true
+    delete_on_termination = true
+  }
+
   # Tags are key-value pairs to help organize resources
   tags = {
-Name = "MyFirstTerraformServer-${count.index + 1}"
+    Name = "MyFirstTerraformServer-${count.index + 1}"
   }
 }
 
@@ -34,7 +56,3 @@ output "web_server_public_ips" {
   description = "The public IP addresses of all web servers."
   value       = [for instance in aws_instance.web_server : instance.public_ip]
 }
-
-
-
-
