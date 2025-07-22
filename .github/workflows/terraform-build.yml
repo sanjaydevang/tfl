@@ -5,10 +5,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   terraform-build:
-    name: Validate Terraform Code
+    name: Terraform CI
     runs-on: ubuntu-latest
 
     env:
@@ -24,11 +25,19 @@ jobs:
         with:
           terraform_version: 1.6.0
 
-      - name: Initialize Terraform
+      - name: Terraform Init
         run: terraform init
 
-      - name: Validate Terraform
+      - name: Terraform Validate
         run: terraform validate
 
-      - name: Show Terraform Plan
+      # ✅ NEW: Terraform Linting (tflint)
+      - name: Lint Terraform Code
+        uses: terraform-linters/tflint-action@v1
+
+      # ✅ NEW: Terraform Security Scan (checkov)
+      - name: Check Terraform Security
+        uses: bridgecrewio/checkov-action@master
+
+      - name: Terraform Plan
         run: terraform plan
