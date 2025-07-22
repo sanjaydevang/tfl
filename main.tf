@@ -8,9 +8,13 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
-      region = "us-east-1"  # Specify the AWS region
     }
   }
+}
+
+# Configure the AWS Provider with region
+provider "aws" {
+  region = "us-east-1"
 }
 
 # 2. Create IAM Role for EC2 Instance
