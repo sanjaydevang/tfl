@@ -12,7 +12,43 @@ terraform {
   }
 }
 
-# 2. Define a Resource (our EC2 instance)
+# 2. Create IAM Role for EC2 Instance
+# This role allows the EC2 instance to interact with AWS services securely
+resource "aws_iam_role" "web_server_role" {
+  name = "sanjay-tf-web-server-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+
+  tags = {
+    Name = "SanjayTfWebServerRole"
+    Owner = "sanjay-tf"
+  }
+}
+
+# Create instance profile for the IAM role
+resource "aws_iam_instance_profile" "web_server_profile" {
+  name = "sanjay-tf-web-server-profile"
+  role = aws_iam_role.web_server_role.name
+}
+
+# Optional: Attach basic policies (uncomment if needed)
+# resource "aws_iam_role_policy_attachment" "ssm_managed_instance_core" {
+#   role       = aws_iam_role.web_server_role.name
+#   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+# }
+
+# 3. Define a Resource (our EC2 instance)
 # This block tells Terraform to create an AWS EC2 instance.
 resource "aws_instance" "web_server" {
   count = 1
@@ -21,6 +57,9 @@ resource "aws_instance" "web_server" {
   
   # instance_type defines the size and power of the server
   instance_type = "t2.micro"
+
+  # ✅ Security Fix: Attach IAM role to EC2 instance
+  iam_instance_profile = aws_iam_instance_profile.web_server_profile.name
 
   # ✅ Security Fix: Enable EBS optimization
   ebs_optimized = true
@@ -47,10 +86,11 @@ resource "aws_instance" "web_server" {
   # Tags are key-value pairs to help organize resources
   tags = {
     Name = "MyFirstTerraformServer-${count.index + 1}"
+    Owner = "sanjay-tf"
   }
 }
 
-# 3. Define an Output
+# 4. Define an Output
 # This will print the public IP address of our server after it's created.
 output "web_server_public_ips" {
   description = "The public IP addresses of all web servers."
