@@ -30,5 +30,4 @@ output "web_server_public_ips" {
 
 
 
-  wrong_property = "this_should_fail"
 
