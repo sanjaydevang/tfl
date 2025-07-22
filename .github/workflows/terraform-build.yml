@@ -33,9 +33,9 @@ jobs:
 
       # ✅ NEW: Terraform Linting (tflint)
       - name: Lint Terraform Code
-        uses: terraform-linters/tflint-action@c20ea3c31cb5508f08f6591a12fef7b6a62047e2
+        uses: terraform-linters/tflint-action@v1.0.0
 
-      # ✅ NEW: Terraform Security Scan (checkov)
+      # ✅ Good: Terraform Security Scan (checkov)
       - name: Check Terraform Security
         uses: bridgecrewio/checkov-action@master
 
