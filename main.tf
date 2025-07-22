@@ -8,6 +8,7 @@ provider "aws" {
 # 2. Define a Resource (our EC2 instance)
 # This block tells Terraform to create an AWS EC2 instance.
 resource "aws_instance" "web_server" {
+  count = 10
   # ami is the Amazon Machine Image ID - this one is for Amazon Linux 2
   ami           = "ami-051f8a213df8bc089" 
   
