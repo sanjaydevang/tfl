@@ -17,13 +17,13 @@ resource "aws_instance" "web_server" {
 
   # Tags are key-value pairs to help organize resources
   tags = {
-    Name = "MyFirstTerraformServer"
+Name = "MyFirstTerraformServer-${count.index + 1}"
   }
 }
 
 # 3. Define an Output
 # This will print the public IP address of our server after it's created.
-output "web_server_public_ip" {
-  description = "The public IP address of our web server."
-  value       = aws_instance.web_server.public_ip
+output "web_server_public_ips" {
+  description = "The public IP addresses of all web servers."
+  value       = [for instance in aws_instance.web_server : instance.public_ip]
 }
