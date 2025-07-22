@@ -27,3 +27,8 @@ output "web_server_public_ips" {
   description = "The public IP addresses of all web servers."
   value       = [for instance in aws_instance.web_server : instance.public_ip]
 }
+
+
+
+  wrong_property = "this_should_fail"
+
