@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
@@ -31,9 +31,14 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      # ✅ NEW: Terraform Linting (tflint)
+      # ✅ FIXED: Setup TFLint and run it
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+        with:
+          tflint_version: latest
+
       - name: Lint Terraform Code
-        uses: terraform-linters/tflint-action@v1.0.0
+        run: tflint --format compact
 
       # ✅ Good: Terraform Security Scan (checkov)
       - name: Check Terraform Security
