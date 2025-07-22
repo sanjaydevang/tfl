@@ -1,8 +1,15 @@
 # 1. Configure the AWS Provider
 # This tells Terraform we are going to be working with AWS
 # and in which region we want to create our resources.
-provider "aws" {
-  region = "us-east-1"
+terraform {
+  required_version = ">= 1.6.0"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
 }
 
 # 2. Define a Resource (our EC2 instance)
