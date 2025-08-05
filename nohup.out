@@ -1,0 +1,1052 @@
+MinIO Object Storage Server
+Copyright: 2015-2025 MinIO, Inc.
+License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+Version: RELEASE.2025-07-23T15-54-02Z (go1.24.5 linux/amd64)
+
+API: http://172.31.84.176:9000  http://127.0.0.1:9000 
+WebUI: http://172.31.84.176:9090 http://127.0.0.1:9090   
+
+Docs: https://docs.min.io
+WARN: Detected default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables
+INFO: Exiting on signal: INTERRUPT
+MinIO Object Storage Server
+Copyright: 2015-2025 MinIO, Inc.
+License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+Version: RELEASE.2025-07-23T15-54-02Z (go1.24.5 linux/amd64)
+
+API: http://172.31.84.176:9000  http://127.0.0.1:9000 
+WebUI: http://172.31.84.176:9090 http://127.0.0.1:9090   
+
+Docs: https://docs.min.io
+WARN: Detected default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables
+
+API: SYSTEM.healing
+Time: 04:05:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.scanner
+Time: 04:05:08 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: maximum retry reached to load the data usage cache `.usage-cache.bin` (*errors.errorString)
+       6: internal/logger/logonce.go:118:logger.(*logOnceType).logOnceIf()
+       5: internal/logger/logonce.go:149:logger.LogOnceIf()
+       4: cmd/logging.go:140:cmd.scannerLogOnceIf()
+       3: cmd/data-usage-cache.go:940:cmd.(*dataUsageCache).load()
+       2: cmd/background-newdisks-heal-ops.go:482:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:05:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:05:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:05:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:05:38 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:05:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.scanner
+Time: 04:05:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.usage.json (cmd.InsufficientWriteQuorum)
+       4: internal/logger/logonce.go:118:logger.(*logOnceType).logOnceIf()
+       3: internal/logger/logonce.go:149:logger.LogOnceIf()
+       2: cmd/logging.go:140:cmd.scannerLogOnceIf()
+       1: cmd/data-usage.go:59:cmd.storeDataUsageInBackend()
+
+API: SYSTEM.healing
+Time: 04:05:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:05:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:05:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:05:59 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:06:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:06:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:06:18 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:06:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:06:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:06:38 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:06:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.healing
+Time: 04:06:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:06:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:06:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:06:58 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:07:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:07:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:07:17 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:07:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:07:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:07:38 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:07:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.healing
+Time: 04:07:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:07:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:07:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:07:57 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:08:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.iam
+Time: 04:08:06 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Failure in periodic refresh for IAM (duration: 159.799µs): unable to list IAM data: Walk: no online disks found in (set:0 pool:0) Read failed. Insufficient number of drives online (*errors.errorString)
+       3: internal/logger/logger.go:271:logger.LogIf()
+       2: cmd/logging.go:29:cmd.iamLogIf()
+       1: cmd/iam.go:472:cmd.(*IAMSys).periodicRoutines()
+
+API: SYSTEM.healing
+Time: 04:08:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:08:17 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:08:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:08:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:08:38 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:08:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.healing
+Time: 04:08:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.batch
+Time: 04:08:53 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Walk: no online disks found in (set:0 pool:0) Read failed. Insufficient number of drives online (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:92:cmd.batchLogIf()
+       2: cmd/batch-handlers.go:1915:cmd.(*BatchJobPool).cleanupReports()
+       1: cmd/batch-handlers.go:1896:cmd.newBatchJobPool.func2()
+
+API: SYSTEM.healing
+Time: 04:08:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:08:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:08:56 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:09:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:09:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:09:18 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:09:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:09:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:09:39 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:09:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.healing
+Time: 04:09:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:09:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:09:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:09:59 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:10:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:10:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:10:17 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:10:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:10:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:10:38 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.scanner
+Time: 04:10:43 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Storage resources are insufficient for the write operation .minio.sys/buckets/.bloomcycle.bin, Object buckets/.bloomcycle.bin (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:136:cmd.scannerLogIf()
+       2: cmd/data-scanner.go:229:cmd.runDataScanner()
+       1: cmd/data-scanner.go:80:cmd.initDataScanner.func1()
+
+API: SYSTEM.healing
+Time: 04:10:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:45 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:10:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:10:55 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:10:58 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:11:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:11:05 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:11:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:11:15 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.peers
+Time: 04:11:17 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Following error has been printed 3 times.. unformatted drive found (*fmt.wrapError)
+       endpoint="/home/ubuntu/minio-data"
+       4: internal/logger/logger.go:261:logger.LogAlwaysIf()
+       3: cmd/logging.go:65:cmd.peersLogAlwaysIf()
+       2: cmd/prepare-storage.go:63:cmd.init.init.func23.func52()
+       1: cmd/background-newdisks-heal-ops.go:596:cmd.monitorLocalDisksAndHeal.func1()
+
+API: SYSTEM.healing
+Time: 04:11:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:11:25 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.
+
+API: SYSTEM.healing
+Time: 04:11:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Read failed. Insufficient number of drives online (*errors.errorString)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:88:cmd.healingLogOnceIf()
+       2: cmd/erasure-server-pool.go:2207:cmd.(*erasureServerPools).HealFormat()
+       1: cmd/background-newdisks-heal-ops.go:581:cmd.monitorLocalDisksAndHeal()
+
+API: SYSTEM.healing
+Time: 04:11:35 UTC 08/05/2025
+DeploymentID: 49654127-702c-48a9-9b16-1d253b1640e6
+Error: Unable to load healing tracker on '/home/ubuntu/minio-data': unformatted drive found, re-initializing.. (*fmt.wrapError)
+       4: internal/logger/logger.go:271:logger.LogIf()
+       3: cmd/logging.go:80:cmd.healingLogIf()
+       2: cmd/background-newdisks-heal-ops.go:456:cmd.healFreshDisk()
+       1: cmd/background-newdisks-heal-ops.go:592:cmd.monitorLocalDisksAndHeal.func1()
+Healing drive '/home/ubuntu/minio-data' - 'mc admin heal alias/ --verbose' to check the current status.

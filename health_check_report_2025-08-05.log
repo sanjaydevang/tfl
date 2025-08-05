@@ -1,0 +1,20 @@
+Cloudian/MinIO Health Check Report
+Generated on: Tue Aug  5 03:50:01 UTC 2025
+-------------------------------------
+
+--- Service Status ---
+MinIO Server Process: RUNNING
+
+--- Filesystem Disk Space ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       6.8G  2.1G  4.7G  32% /
+
+--- S3 Bucket Listing ---
+[2025-08-05 03:22:02 UTC]     0B backups/
+[2025-08-05 03:24:03 UTC]     0B weekjob/
+
+--- Object Count in 'backups' bucket ---
+Total objects: 1
+
+-------------------------------------
+Report finished.
